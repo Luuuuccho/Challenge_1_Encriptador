@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .main {
-    width: 400px;
+    width: 700px;
     background-color: #24303c;
     padding: 30px;
     margin: auto;
@@ -48,4 +48,7 @@ body h1 {
     width: 100%;
     height: 55px;
     color: white;
+}
+.error{
+    background-color: lightcoral;
 }
