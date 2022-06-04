@@ -16,8 +16,13 @@ function valida(texto){
 }
 //Función Copiar.
 var copiar = document.querySelector('#btn-copiar');
-
   copiar.addEventListener('click', function(){
     var texto = document.querySelector('#texto-encriptado').value;
     navigator.clipboard.writeText(texto);
+    document.getElementById('btn-copiar').innerHTML= "¡Copiado!";
+    document.getElementById('btn-copiar').style.backgroundColor= 'green';
+        setTimeout(function(){
+        document.getElementById('btn-copiar').innerHTML= "Copiar";
+        document.getElementById('btn-copiar').style.backgroundColor= '#1f53c5';
+        }, 2000);
 });
