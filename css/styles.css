@@ -52,3 +52,11 @@ body h1 {
 .error{
     background-color: lightcoral;
 }
+.btn:hover, .btn_active{
+    background: #3f66bb;
+    transition: 0.3s;
+}
+.btn:active{
+    transform: scale(0.9);
+    transition: 0.4s;
+}
